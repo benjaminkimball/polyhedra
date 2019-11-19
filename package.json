@@ -7,8 +7,16 @@
     "lint": "eslint 'lib/**/*.js'",
     "test": "cross-env NODE_ENV=test mocha 'lib/**/*.test.js'"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:benjaminkimball/dice-bag.git"
+  },
   "author": "Benjamin Kimball <hello@benjaminkimball.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjaminkimball/dice-bag/issues"
+  },
+  "homepage": "https://github.com/benjaminkimball/dice-bag#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "cross-env": "^6.0.3",
