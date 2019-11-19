@@ -2,12 +2,13 @@
 
 const dice = require("../lib/dice");
 
-const [_execPath, _filePath, ...diceSets] = process.argv;
+const [, , ...diceSets] = process.argv;
 
 console.log(
   diceSets.map(set => {
-    const [_input, count, sides] = set.match(/^(\d+)(d\d+)$/);
+    const [, count, sides] = set.match(/^(\d+)(d\d+)$/);
 
+    /* eslint-disable-next-line security/detect-object-injection */
     return [set, dice[sides](parseInt(count))];
   })
 );
