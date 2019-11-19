@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const dice = require("../lib/dice");
+
+const [_execPath, _filePath, ...diceSets] = process.argv;
+
+console.log(
+  diceSets.map(set => {
+    const [_input, count, sides] = set.match(/^(\d+)(d\d+)$/);
+
+    return [set, dice[sides](parseInt(count))];
+  })
+);
