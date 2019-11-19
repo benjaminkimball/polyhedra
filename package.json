@@ -1,5 +1,5 @@
 {
-  "name": "dice-bag",
+  "name": "polyhedra",
   "version": "0.0.0",
   "description": "Playing with random number generation in JavaScript.",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:benjaminkimball/dice-bag.git"
+    "url": "git+ssh://git@github.com:benjaminkimball/polyhedra.git"
   },
   "author": "Benjamin Kimball <hello@benjaminkimball.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benjaminkimball/dice-bag/issues"
+    "url": "https://github.com/benjaminkimball/polyhedra/issues"
   },
-  "homepage": "https://github.com/benjaminkimball/dice-bag#readme",
+  "homepage": "https://github.com/benjaminkimball/polyhedra#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "cross-env": "^6.0.3",

@@ -1,3 +1,3 @@
-# dice-bag
+# polyhedra
 
 Playing with random number generation in JavaScript.
