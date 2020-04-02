@@ -1,6 +1,6 @@
 {
   "name": "polyhedra",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Playing with random number generation in JavaScript.",
   "scripts": {
     "format": "prettier --write 'lib/**/*.js'",
