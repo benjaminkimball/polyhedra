@@ -19,9 +19,6 @@
     "url": "https://github.com/benjaminkimball/polyhedra/issues"
   },
   "homepage": "https://github.com/benjaminkimball/polyhedra#readme",
-  "dependencies": {
-    "seedrandom": "^3.0.5"
-  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",

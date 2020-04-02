@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 
-const dice = require("../lib/dice");
+const { parse, roll } = require("../lib/dice");
 
-const [, , ...diceSets] = process.argv;
+const [, , ...formulas] = process.argv;
 
 console.log(
-  diceSets.map(set => {
-    const [, count, sides] = set.match(/^(\d+)(d\d+)$/);
+  formulas.map(formla => {
+    const [count, sides, modifier] = parse(formla);
+    const rolls = roll(sides, count);
+    const total = rolls.reduce((accum, n) => accum + n, modifier);
 
-    /* eslint-disable-next-line security/detect-object-injection */
-    return [set, dice[sides](parseInt(count))];
+    return { formla, rolls, total };
   })
 );
